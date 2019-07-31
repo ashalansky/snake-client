@@ -14,13 +14,13 @@ const handleUserInput = stdin.on('data', (key) => {
   if (key === "w") {
     conn.write('Move: up');
   }
-  if (key === "a") {
+  if (key === "d") {
     conn.write("Move: right");
   }
   if (key === "s") {
     conn.write("Move: down");
   }
-  if (key === "d") {
+  if (key === "a") {
     conn.write("Move: left");
   }
   if (key === '\u0003') {
